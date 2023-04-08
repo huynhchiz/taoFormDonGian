@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>So Thich Cua Ban</title>
+</head>
+<body>
+    <!-- style css -->
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #form1 {
+            width: 500px;
+            padding: 5px;
+            margin: 0 auto;
+            border-top: 16px solid rgb(8, 248, 236);
+            border-bottom: 16px solid rgb(8, 248, 236);
+            border-right: 32px solid rgb(8, 248, 236);
+            border-left: 32px solid rgb(8, 248, 236);
+        }
+        h2 {
+            background-color: orangered;
+            color: white;
+            text-align: center;
+        }
+
+        .formcontent {
+            width: 100%;
+            display: flex;
+        }
+        
+        .titles {
+            width: 30%;
+            text-align: end;
+            margin-right: 16px;
+        }
+        
+        .titles > p {
+            margin-top: 8px;
+        }
+
+        .contents {
+            width: 70%;
+        }
+
+        .contents input {
+
+            margin-top: 8px;
+        }
+
+        /* .contents .yourname1, .email1, .sothich-ul {
+            margin-top: 8px;
+        } */
+        .sothich-ul {
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+
+        .sothich-ul li {
+            list-style-type: none;
+            padding-right: 16px;
+        }
+
+
+
+    </style>
+
+    <!-- form -->
+    <form method="get" action="simpleform.html" id="form1">
+        <h2>SỞ THÍCH CỦA BẠN</h2>
+
+        <div class="formcontent">
+
+            <div class="titles">
+                <p for="yourname1">Họ và tên:</p>
+                <p for="email1">Email:</p>
+                <p>Sở thích:</p>
+            </div>
+
+
+            <div class="contents">
+                <input type="text" name="yourname" id="yourname1">
+                <input type="email" name="email" id="email1">
+                <ul class="sothich-ul">
+                    <li>
+                        <input type="checkbox" name="hobby" class="hobby1">Thể thao
+                    </li>
+                    <li>
+                        <input type="checkbox" name="hobby" class="hobby1">Âm nhạc
+                    </li>
+                    <li>
+                        <input type="checkbox" name="hobby" class="hobby1">Đọc sách
+                    </li>
+                    <li>
+                        <input type="checkbox" name="hobby" class="hobby1">Lướt web
+                    </li>
+                    <li>
+                        <input type="checkbox" name="hobby" class="hobby1">Chơi game
+                    </li>
+                    <li>
+                        <input type="checkbox" name="hobby" class="hobby1">Điện ảnh
+                    </li>
+                    <li>
+                        <input type="checkbox" name="hobby" class="hobby1">Du lịch
+                    </li>
+                </ul>
+                
+                <input type="submit" name="submit-form" id="submit-btn">
+                <input type="reset" name="reset-form" id="reset-btn">   
+            </div>  
+        </div>
+    </form>
+</body>
+</html>
